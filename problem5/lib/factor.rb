@@ -7,28 +7,12 @@ class Factor
     @base, @expoent = base, expoent
   end
 
-  def same_base?(another_factor)
-    return false if another_factor.nil?
-    @base == another_factor.base
-  end
-
-  def ==(another_factor)
-    return false if another_factor.nil?
-    same_base?(another_factor) && same_expoent?(another_factor)
-  end
-
   def <=>(another_factor)
     @expoent <=> another_factor.expoent
   end
 
   def to_i
-    i = 1
-    @expoent.times { i = i * base }
-    return i
-  end
-
-  def to_s
-    "#{@base}^#{@expoent}"
+    (1..@expoent).inject(1) { |result, current| result = @base * result }
   end
 
   def self.factors_of(number)
@@ -36,10 +20,6 @@ class Factor
   end
 
   private
-
-    def same_expoent?(another_factor)
-      @expoent == another_factor.expoent
-    end
 
     def self.plain_factors_for(number)
       factors = []
