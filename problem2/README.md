@@ -13,7 +13,7 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 You will need:
 
  * Ruby 1.8.x or 1.9.x - you can install using [RVM](http://rvm.beginrescueend.com/)
- * Bundler - [http://gembundler.com/]
+ * Bundler - <http://gembundler.com/>
 
 Then, in the problem directory, type:
 

@@ -11,7 +11,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 You will need:
 
  * Ruby 1.8.x or 1.9.x - you can install using [RVM](http://rvm.beginrescueend.com/)
- * Bundler - http://gembundler.com/
+ * Bundler - <http://gembundler.com/>
 
 Then, in the problem directory, type:
 
