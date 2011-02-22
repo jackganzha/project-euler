@@ -10,3 +10,11 @@ The motivation for starting Project Euler, and its continuation, is to provide a
 
 I will try to solve the problems using mainly Ruby and Java. Eventually, I can pick another language, just for fun. Each problem will have its own readme file, with instructions about how to execute the solution.
 
+# Running all solutions together
+
+Just type the following commands in the project root directory:
+
+    >> bundle install
+    >> rake
+
+All the specs, for all the problems, will run.
