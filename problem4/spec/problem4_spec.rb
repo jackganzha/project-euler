@@ -1,5 +1,4 @@
 require File.expand_path(File.dirname(__FILE__) + '/../lib/problem4')
-require 'spec_helper'
 
 describe Problem4 do
   describe "Testing if a number is a palindromic number" do

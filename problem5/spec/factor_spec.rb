@@ -1,5 +1,4 @@
 require File.expand_path(File.dirname(__FILE__) + '/../lib/factor')
-require 'spec_helper'
 
 describe Factor do
 

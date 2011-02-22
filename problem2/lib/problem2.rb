@@ -18,11 +18,11 @@ class Problem2
     def fibonacci_sequence_upto(limit)
       first, second = 1, 2
       numbers = [first, second]
-      while(second < limit)
+      while((first + second) < limit)
         tmp = second
         second = first + second
         first = tmp
-        numbers << second if second < limit
+        numbers << second
       end
       numbers
     end

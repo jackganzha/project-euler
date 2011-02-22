@@ -1,8 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/../lib/factor')
 require File.expand_path(File.dirname(__FILE__) + '/../lib/problem5')
 
-require 'spec_helper'
-
 describe Problem5 do
 
   describe "Get unique factors for range" do

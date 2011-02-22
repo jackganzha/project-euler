@@ -1,5 +1,4 @@
 require File.expand_path(File.dirname(__FILE__) + '/../lib/problem2')
-require 'spec_helper'
 
 describe Problem2 do
 
