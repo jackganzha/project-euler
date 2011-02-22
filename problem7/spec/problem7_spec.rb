@@ -22,16 +22,16 @@ describe Problem7 do
 
   describe "Find the nth prime number" do
     it "2nd prime number is 3" do
-      subject.find_prime_at(2).should == 3
+      subject.prime_at(2).should == 3
     end
     it "1st prime number is 2" do
-      subject.find_prime_at(1).should == 2
+      subject.prime_at(1).should == 2
     end
     it "6th prime is 13" do
-      subject.find_prime_at(6).should == 13
+      subject.prime_at(6).should == 13
     end
     it "10001st prime number is 104743" do
-      subject.find_prime_at(10001).should == 104743
+      subject.prime_at(10001).should == 104743
     end
   end
 end

@@ -1,6 +1,6 @@
 class Problem7
 
-  def find_prime_at(amount = 100)
+  def prime_at(amount = 100)
     last_prime = 2
 
     number, count, incc = 3, 2, 2
