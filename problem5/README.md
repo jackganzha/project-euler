@@ -8,7 +8,7 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 # About the solution
 
-I can solve this problem using a brute force approach, but it will not be efficient (or fun). So, I decide to try a mathematical approach istead of the brute force one. The solution is based on prime factors of numbers within the range. Let me explain using the example given in the problem description:
+Of course I can solve this problem using a brute force approach, but it will not be efficient (or fun). So, I decide to try a mathematical approach instead of the brute force one. The solution is based on finding the prime factors for each numbers within the range. Let me explain using the example given in the problem description:
 
 For the range [1..10], the prime factors for each number are:
 
@@ -22,7 +22,7 @@ For the range [1..10], the prime factors for each number are:
     3  => 3
     2  => 2
 
-Lets write it using a expoent representation:
+Let's write it using a expoent representation:
 
     10 => 2¹, 5¹
     9  => 3²
@@ -34,13 +34,13 @@ Lets write it using a expoent representation:
     3  => 3¹
     2  => 2¹
 
-If we multiply all the prime factors here, we will for sure get a number that is evenly divisible for all the numbers in the range 1..10. But, because we want the smallest number (not any one), we must use only the factors with the biggest expoent. Per instance, if we have both 2¹ and 2³, we can use just 2³, because any number that is evenly divisible per 2³ is also divisible per 2¹.
+If we multiply all the prime factors here, we will for sure get a number that is evenly divisible for all the numbers in the range 1..10. But, because we want the smallest number (not any one), we must use only the unique factors with the biggest expoent. Per instance, if we have both 2¹ and 2³, we can use just 2³, because any number that is evenly divisible per 2³ is also divisible per 2¹.
 
 So, we can reduce the factors to:
 
     2³, 3², 5¹, 7¹
 
-So, my approach will be find the unique prime factors for a given range. :-)
+Then, my approach will be find the unique prime factors for a given range. :-)
 
 # How to run
 
