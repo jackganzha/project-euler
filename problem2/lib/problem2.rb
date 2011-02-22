@@ -16,13 +16,10 @@ class Problem2
   private
 
     def fibonacci_sequence_upto(limit)
-      first, second = 1, 2
-      numbers = [first, second]
-      while((first + second) < limit)
-        tmp = second
-        second = first + second
-        first = tmp
-        numbers << second
+      i, numbers = 1, [1, 2]
+      while((numbers[i - 1] + numbers[i]) < limit)
+        numbers << numbers[i - 1] + numbers[i]
+        i = i + 1
       end
       numbers
     end
